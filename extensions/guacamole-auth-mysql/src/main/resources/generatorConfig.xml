@@ -31,6 +31,10 @@
         <!-- Allow selectByExample with RowBounds -->
         <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"/>
 
+        <!-- Cache results -->
+        <plugin type="org.mybatis.generator.plugins.CachePlugin"/>
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        
         <!-- MySQL JDBC driver class. -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
             connectionURL="jdbc:mysql://127.0.0.1:3306"
